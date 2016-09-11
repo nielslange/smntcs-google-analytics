@@ -6,7 +6,7 @@ Author: Niels Lange
 Author URI: http://www.nielslange.de
 Text Domain: smntcs-google-analytics
 Domain Path: /languages/
-Version: 1.2.0 
+Version: 2.0 
 */
 
 /*  Copyright 2014-2016	Niels Lange (email : info@nielslange.de)
@@ -26,72 +26,64 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-// Define WP_CONTENT_URL
-if (!defined('WP_CONTENT_URL'))
-      define('WP_CONTENT_URL', get_option('siteurl').'/wp-content');
-if (!defined('WP_CONTENT_DIR'))
-      define('WP_CONTENT_DIR', ABSPATH.'wp-content');
+// Avoid direct plugin access
+if ( !defined( 'ABSPATH' ) ) exit;
 
-// Define WP_PLUGIN_URL
-if (!defined('WP_PLUGIN_URL'))
-      define('WP_PLUGIN_URL', WP_CONTENT_URL.'/plugins');
-if (!defined('WP_PLUGIN_DIR'))
-      define('WP_PLUGIN_DIR', WP_CONTENT_DIR.'/plugins');
-
-// Activate plugin
-register_activation_hook(__FILE__, 'activate_google_analytics');
-function activate_google_analytics() {
-	add_option('google_analytics_tracking_code', '');
+// Load text domain
+add_action('plugins_loaded', 'smntcs_google_analytics_load_textdomain');
+function smntcs_google_analytics_load_textdomain() {
+	load_plugin_textdomain( 'smntcs-google-analytics', false, dirname( plugin_basename(__FILE__) ) . '/languages/' );
 }
 
-// Deactivate plugin
-register_deactivation_hook(__FILE__, 'deactive_google_analytics');
-function deactive_google_analytics() {
-	delete_option('google_analytics_tracking_code');
-}
+// Add Adobe Typekit Fonts to WordPress Customizer
+add_action( 'customize_register', 'smntcs_google_analytics_register_customize' );
+function smntcs_google_analytics_register_customize( $wp_customize ) {
+	$wp_customize->add_section( 'smntcs_google_analytics_section', array(
+			'priority' 	=> 150,
+			'title' 	=> __('Google Analytics', 'smntcs-google-analytics'),
+	));
 
-// Initialize plugin
-function admin_init_google_analytics() {
-	register_setting('google_analytics', 'google_analytics_tracking_code');
-}
+	$wp_customize->add_setting( 'smntcs_google_analytics_tracking_code', array(
+			'default' 	=> '',
+			'type'		=> 'option',
+	));
 
-// Add menu item in backend
-function admin_menu_google_analytics() {
-	add_options_page('Google Analytics', 'Google Analytics', 'manage_options', 'google-analytics', 'options_page_google_analytics');
-}
+	$wp_customize->add_control( 'smntcs_google_analytics_tracking_code', array(
+			'label' 	=> __('Google Analytics tracking code', 'smntcs-google-analytics'),
+			'section' 	=> 'smntcs_google_analytics_section',
+			'type' 		=> 'textarea',
+	));
 
-// Add options page in backend
-function options_page_google_analytics() {
-	include(WP_PLUGIN_DIR.'/smntcs-google-analytics/options.php');
-}
+	$wp_customize->add_setting( 'smntcs_google_analytics_ip_anonymization', array(
+			'default' 	=> false,
+			'type'		=> 'option',
+	));
 
-// Run main function
-function google_analytics() {
-    printf(get_option('google_analytics_tracking_code'));
-}
-
-// Initialize show plugin in backend
-if (is_admin()) {
-	add_action('admin_init', 'admin_init_google_analytics');
-	add_action('admin_menu', 'admin_menu_google_analytics');
-}
-
-// Show site verification code in frontend
-if (!is_admin()) {
-	add_action('wp_footer', 'google_analytics');
-}
-
-// Load translation(s)
-add_action('plugins_loaded', 'smntcs_ga_load_textdomain');
-function smntcs_ga_load_textdomain() {
-	load_plugin_textdomain( 'smntcs-google-analytics', false, false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+	$wp_customize->add_control( 'smntcs_google_analytics_ip_anonymization', array(
+			'label' 	=> __('IP Anonymization', 'smntcs-google-analytics'),
+			'section' 	=> 'smntcs_google_analytics_section',
+			'type' 		=> 'checkbox',
+	));
 }
 
 // Add settings link on plugin page
-$plugin = plugin_basename(__FILE__);
-add_filter("plugin_action_links_$plugin", 'smntcs_ga_plugin_settings_link' );
+add_filter("plugin_action_links_" . plugin_basename(__FILE__), 'smntcs_ga_plugin_settings_link' );
 function smntcs_ga_plugin_settings_link($links) {
-	$settings_link = '<a href="options-general.php?page=google-analytics">' . __('Settings', 'smntcs-google-analytics') . '</a>';
+	$admin_url = admin_url( 'customize.php?autofocus[control]=smntcs_google_analytics_tracking_code' );
+	$settings_link =  '<a href="' . $admin_url . '">' . __('Settings', 'smntcs-google-analytics') . '</a>';
 	array_unshift($links, $settings_link);
 	return $links;
+}
+
+// Load Adobe Typekit Fonts code and custom CSS
+add_action('wp_footer', 'smntcs_google_analytics_enqueue');
+function smntcs_google_analytics_enqueue() {
+	if ( !is_admin() && get_option('smntcs_google_analytics_tracking_code') ) {
+		$tracking = get_option('smntcs_google_analytics_tracking_code');
+		if ( get_option('smntcs_google_analytics_ip_anonymization') == true ) {
+			$anonymize = get_option('smntcs_google_analytics_ip_anonymization');
+			$tracking = str_replace("ga('send', 'pageview');", "ga('send', 'pageview'); \n ga('set', 'anonymizeIp', true);", $tracking);
+		}
+		print($tracking);
+	}
 }

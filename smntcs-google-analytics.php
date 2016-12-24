@@ -6,7 +6,7 @@ Author: Niels Lange
 Author URI: http://www.nielslange.de
 Text Domain: smntcs-google-analytics
 Domain Path: /languages/
-Version: 2.0 
+Version: 2.0.1
 */
 
 /*  Copyright 2014-2016	Niels Lange (email : info@nielslange.de)
@@ -44,7 +44,6 @@ function smntcs_google_analytics_register_customize( $wp_customize ) {
 	));
 
 	$wp_customize->add_setting( 'smntcs_google_analytics_tracking_code', array(
-			'default' 	=> '',
 			'type'		=> 'option',
 	));
 

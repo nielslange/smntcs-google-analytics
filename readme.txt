@@ -3,12 +3,12 @@ Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KFV2UW8YGYNAE
 Tags: Google Analytics, Tracking, Web Tracking, IP Anonymization, Anonymize IP
 Requires at least: 3.4
-Tested up to: 4.6.1
-Stable tag: 2.0
+Tested up to: 4.7
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Adds Google Analytics tracking code to your site and anonymize visitors IP address if necessary
+Adds Google Analytics tracking code to your site and anonymize visitors IP address if necessary.
 
 == Description ==
 
@@ -29,11 +29,20 @@ Since version 2.0 it's possible to anonymize the IP of your visitor, which is re
 4. Go to 'Appearance' » 'Customize' » 'Google Analytics' and paste your tracking code
 5. Anonymize visitors IP address if necessary
 
+== Frequently Asked Questions ==
+
+= Why am I not able to save the verification code? =
+
+This issue might be caused by a security plugin. If you use a security plugin, e.g. Wordfence, then disable it so save your verification code and activate it once you’re done.
+
 == Screenshots ==
 
 1. Paste you Google Analytics tracking code in the customizer
 
 == Changelog ==
+
+= 2.0.1 =
+* Add FAQ
 
 = 2.0 =
 * Use Customizer instead of options page

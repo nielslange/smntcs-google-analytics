@@ -1,11 +1,11 @@
- === SMNTCS Google Analytics ===
+=== SMNTCS Google Analytics ===
  
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KFV2UW8YGYNAE
-Tags: Google Analytics, Tracking, Web Tracking, IP Anonymization, Anonymize IP
-Version: 2.1
+Tags: Google Analytics, Tracking, IP Anonymization, Anonymize IP
+Version: 2.2
 Requires at least: 3.4
-Tested up to: 5.0
+Tested up to: 5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,23 +42,26 @@ This issue might be caused by a security plugin. If you use a security plugin, e
 
 == Changelog ==
 
+= 2.2 =
+* Tested up to 5.1
+
 = 2.1 =
-* Add FAQ
+* Added FAQ
 
 = 2.0 =
 * Use Customizer instead of options page
 
 = 1.4 =
-* Add donation link
+* Added donation link
 
 = 1.3 =
-* Update textdomain
+* Updateed textdomain
 
 = 1.2 =
-* Fix tracking code visibility
+* Fixed tracking code visibility
 
 = 1.1 =
-* Fix plugin title
+* Fixed plugin title
 
 = 1.0 =
 * Initial release

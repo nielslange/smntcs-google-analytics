@@ -5,7 +5,7 @@
  * Description: Adds <a href="https://analytics.google.com/">Google Analytics</a> to your site
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
- * Version: 2.2
+ * Version: 2.3
  * Requires at least: 3.4
  * Requires PHP: 5.6
  * Tested up to: 5.2

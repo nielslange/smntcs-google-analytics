@@ -3,9 +3,9 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KFV2UW8YGYNAE
 Tags: Google Analytics, Tracking, IP Anonymization, Anonymize IP
-Version: 2.2
+Version: 2.3
 Requires at least: 3.4
-Tested up to: 5.1
+Tested up to: 5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ This issue might be caused by a security plugin. If you use a security plugin, e
 1. Paste you Google Analytics tracking code in the customizer
 
 == Changelog ==
+
+= 2.3 =
+* Test up to 5.2
 
 = 2.2 =
 * Test up to 5.1

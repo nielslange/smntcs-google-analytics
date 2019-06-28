@@ -3,15 +3,20 @@
  * Plugin Name: SMNTCS Google Analytics
  * Plugin URI: https://github.com/nielslange/smntcs-google-analytics/
  * Description: Adds <a href="https://analytics.google.com/">Google Analytics</a> to your site
- * Author: Niels Lange
- * Author URI: https://nielslange.com
- * Version: 2.1
+ * Author: Niels Lange <info@nielslange.de>
+ * Author URI: https://nielslange.de
+ * Version: 2.2
  * Requires at least: 3.4
- * Tested up to: 5.0
+ * Requires PHP: 5.6
+ * Tested up to: 5.2
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: smntcs-google-analytics
- * Domain Path: /languages/
+ *
+ * @category   Plugin
+ * @package    WordPress
+ * @subpackage SMNTCS Google Analytics
+ * @author     Niels Lange <info@nielslange.de>
+ * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
 
 // Avoid direct plugin access

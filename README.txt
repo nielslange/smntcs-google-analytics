@@ -43,25 +43,25 @@ This issue might be caused by a security plugin. If you use a security plugin, e
 == Changelog ==
 
 = 2.2 =
-* Tested up to 5.1
+* Test up to 5.1
 
 = 2.1 =
-* Added FAQ
+* Add FAQ
 
 = 2.0 =
 * Use Customizer instead of options page
 
 = 1.4 =
-* Added donation link
+* Add donation link
 
 = 1.3 =
-* Updateed textdomain
+* Update textdomain
 
 = 1.2 =
-* Fixed tracking code visibility
+* Fix tracking code visibility
 
 = 1.1 =
-* Fixed plugin title
+* Fix plugin title
 
 = 1.0 =
 * Initial release

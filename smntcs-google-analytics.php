@@ -5,12 +5,12 @@
  * Description: Adds <a href="https://analytics.google.com/">Google Analytics</a> to your site
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
- * Version: 2.3
+ * Version: 2.4
  * Requires at least: 3.4
  * Requires PHP: 5.6
- * Tested up to: 5.2
- * License: GPL2+
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Tested up to: 5.3
+ * License: GPL3+
+ * License URI: https://www.gnu.org/licenses/gpl.html
  *
  * @category   Plugin
  * @package    WordPress

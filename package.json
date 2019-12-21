@@ -1,0 +1,26 @@
+{
+	"name": "smntcs-google-analytics",
+	"version": "1.0.0",
+	"description": "Adds Google Analytics tracking code to your site.",
+	"author": "Niels Lange",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"Plugin",
+		"SMNTCS Google Analytics"
+	],
+	"homepage": "https://github.com/nielslange/smntcs-google-analytics#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nielslange/smntcs-google-analytics.git"
+	},
+	"bugs": {
+		"url": "https://github.com/nielslange/smntcs-google-analytics/issues"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^5.0.0"
+	},
+	"scripts": {
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
+	}
+}

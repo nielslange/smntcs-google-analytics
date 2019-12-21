@@ -1,0 +1,35 @@
+{
+	"name": "nielslange/smntcs-google-analytics",
+	"type": "plugin",
+	"description": "Adds Google Analytics tracking code to your site.",
+	"keywords": [
+		"WordPress",
+		"Plugin",
+		"SMNTCS Google Analytics"
+	],
+	"homepage": "https://github.com/nielslange/smntcs-google-analytics",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Contributors",
+			"homepage": "https://github.com/nielslange/smntcs-google-analytics/graphs/contributors"
+		}
+	],
+	"require": {
+		"php": ">=5.6"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+		"jakub-onderka/php-parallel-lint": "^1.0",
+		"wptrt/wpthemereview": "^0.2.1"
+	},
+	"scripts": {
+		"checkcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --runtime-set testVersion 5.6-",
+		"fixcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --runtime-set testVersion 5.6-",
+		"lint": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."
+	},
+	"support": {
+		"issues": "https://github.com/nielslange/smntcs-google-analytics/issues",
+		"source": "https://github.com/nielslange/smntcs-google-analytics"
+	}
+}

@@ -3,11 +3,11 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KFV2UW8YGYNAE
 Tags: Google Analytics, Tracking, IP Anonymization, Anonymize IP
-Version: 2.3
+Version: 2.4
 Requires at least: 3.4
-Tested up to: 5.2
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tested up to: 5.3
+License: GPL3+
+License URI: https://www.gnu.org/licenses/gpl.html
 
 Adds Google Analytics tracking code to your site and anonymize visitors IP address if necessary.
 
@@ -24,10 +24,10 @@ Since version 2.0 it's possible to anonymize the IP of your visitor, which is re
 
 == Installation ==
 
-1. Upload 'smntcs-google-analytics’ to the '/wp-content/plugins/' directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
+1. Upload `smntcs-google-analytics` to the `/wp-content/plugins/` directory
+2. Activate the plugin through the `Plugins` menu in WordPress
 3. Go to https://www.google.com/analytics/, add a new site and copy the tracking code
-4. Go to 'Appearance' » 'Customize' » 'Google Analytics' and paste your tracking code
+4. Go to `Appearance → Customize → Google Analytics` and paste your tracking code
 5. Anonymize visitors IP address if necessary
 
 == Frequently Asked Questions ==
@@ -41,6 +41,10 @@ This issue might be caused by a security plugin. If you use a security plugin, e
 1. Paste you Google Analytics tracking code in the customizer
 
 == Changelog ==
+
+= 2.4 =
+* Test up to 5.3
+* Add build tools
 
 = 2.3 =
 * Test up to 5.2

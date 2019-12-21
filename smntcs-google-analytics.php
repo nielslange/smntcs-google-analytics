@@ -33,35 +33,50 @@ function smntcs_google_analytics_load_textdomain() {
 // Add Adobe Typekit Fonts to WordPress Customizer
 add_action( 'customize_register', 'smntcs_google_analytics_register_customize' );
 function smntcs_google_analytics_register_customize( $wp_customize ) {
-	$wp_customize->add_section( 'smntcs_google_analytics_section', array(
-		'priority' => 150,
-		'title'    => __( 'Google Analytics', 'smntcs-google-analytics' ),
-	) );
+	$wp_customize->add_section(
+		'smntcs_google_analytics_section',
+		array(
+			'priority' => 150,
+			'title'    => __( 'Google Analytics', 'smntcs-google-analytics' ),
+		)
+	);
 
-	$wp_customize->add_setting( 'smntcs_google_analytics_tracking_code', array(
-		'type' => 'option',
-	) );
+	$wp_customize->add_setting(
+		'smntcs_google_analytics_tracking_code',
+		array(
+			'type' => 'option',
+		)
+	);
 
-	$wp_customize->add_control( 'smntcs_google_analytics_tracking_code', array(
-		'label'   => __( 'Google Analytics tracking code', 'smntcs-google-analytics' ),
-		'section' => 'smntcs_google_analytics_section',
-		'type'    => 'textarea',
-	) );
+	$wp_customize->add_control(
+		'smntcs_google_analytics_tracking_code',
+		array(
+			'label'   => __( 'Google Analytics tracking code', 'smntcs-google-analytics' ),
+			'section' => 'smntcs_google_analytics_section',
+			'type'    => 'textarea',
+		)
+	);
 
-	$wp_customize->add_setting( 'smntcs_google_analytics_ip_anonymization', array(
-		'default' => false,
-		'type'    => 'option',
-	) );
+	$wp_customize->add_setting(
+		'smntcs_google_analytics_ip_anonymization',
+		array(
+			'default' => false,
+			'type'    => 'option',
+		)
+	);
 
-	$wp_customize->add_control( 'smntcs_google_analytics_ip_anonymization', array(
-		'label'   => __( 'IP Anonymization', 'smntcs-google-analytics' ),
-		'section' => 'smntcs_google_analytics_section',
-		'type'    => 'checkbox',
-	) );
+	$wp_customize->add_control(
+		'smntcs_google_analytics_ip_anonymization',
+		array(
+			'label'   => __( 'IP Anonymization', 'smntcs-google-analytics' ),
+			'section' => 'smntcs_google_analytics_section',
+			'type'    => 'checkbox',
+		)
+	);
 }
 
 // Add settings link on plugin page
-add_filter( "plugin_action_links_" . plugin_basename( __FILE__ ), 'smntcs_ga_plugin_settings_link' );
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_ga_plugin_settings_link' );
 function smntcs_ga_plugin_settings_link( $links ) {
 	$admin_url     = admin_url( 'customize.php?autofocus[control]=smntcs_google_analytics_tracking_code' );
 	$settings_link = '<a href="' . $admin_url . '">' . __( 'Settings', 'smntcs-google-analytics' ) . '</a>';
@@ -75,10 +90,10 @@ add_action( 'wp_footer', 'smntcs_google_analytics_enqueue' );
 function smntcs_google_analytics_enqueue() {
 	if ( ! is_admin() && get_option( 'smntcs_google_analytics_tracking_code' ) ) {
 		$tracking = get_option( 'smntcs_google_analytics_tracking_code' );
-		if ( get_option( 'smntcs_google_analytics_ip_anonymization' ) == true ) {
+		if ( true === get_option( 'smntcs_google_analytics_ip_anonymization' ) ) {
 			$anonymize = get_option( 'smntcs_google_analytics_ip_anonymization' );
 			$tracking  = str_replace( "ga('send', 'pageview');", "ga('send', 'pageview'); \n ga('set', 'anonymizeIp', true);", $tracking );
 		}
-		print( $tracking );
+		print( $tracking ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 }

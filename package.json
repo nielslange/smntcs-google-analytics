@@ -18,9 +18,11 @@
 		"url": "https://github.com/nielslange/smntcs-google-analytics/issues"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^5.0.0"
+		"@wordpress/env": "^2.1.0"
 	},
 	"scripts": {
-		"lint:pkg-json": "wp-scripts lint-pkg-json"
+		"wp-env": "wp-env",
+		"start": "npm run wp-env start",
+		"stop": "npm run wp-env stop"
 	}
 }

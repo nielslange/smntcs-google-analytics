@@ -2,6 +2,7 @@
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
 [![Build Status](https://api.travis-ci.com/nielslange/smntcs-google-analytics.svg?branch=master)](https://api.travis-ci.com/nielslange/smntcs-google-analytics)
+[![Coverage Status](https://coveralls.io/repos/github/nielslange/smntcs-google-analytics/badge.svg?branch=trunk)](https://coveralls.io/github/nielslange/smntcs-google-analytics?branch=trunk)
 [![GPLv3 License](https://img.shields.io/github/license/nielslange/smntcs-google-analytics.svg)](https://www.gnu.org/licenses/gpl.html)
 [![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-google-analytics/wp-badge.svg)](https://plugintests.com/plugins/smntcs-google-analytics/latest)
 [![Compatible to PHP version](https://plugintests.com/plugins/smntcs-google-analytics/php-badge.svg)](https://plugintests.com/plugins/smntcs-google-analytics/latest)

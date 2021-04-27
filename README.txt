@@ -3,7 +3,7 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KFV2UW8YGYNAE
 Tags: Google Analytics, Tracking, IP Anonymization, Anonymize IP
-Version: 2.4
+Version: 2.5
 Tested up to: 5.7
 Requires at least: 5.5
 Requires PHP: 7.0
@@ -42,6 +42,11 @@ This issue might be caused by a security plugin. If you use a security plugin, e
 1. Paste you Google Analytics tracking code in the customizer
 
 == Changelog ==
+
+= 2.5 =
+* [Test up to 5.7](https://github.com/nielslange/smntcs-google-analytics/issues/11)
+* [Add build tools](https://github.com/nielslange/smntcs-google-analytics/issues/9)
+* [Add Add GitHub Actions](https://github.com/nielslange/smntcs-google-analytics/issues/10)
 
 = 2.4 =
 * Test up to 5.3

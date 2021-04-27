@@ -25,6 +25,11 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-google-analytics
 
 ## Changelog
 
+### 2.5
+* [Test up to 5.7](https://github.com/nielslange/smntcs-google-analytics/issues/11)
+* [Add build tools](https://github.com/nielslange/smntcs-google-analytics/issues/9)
+* [Add Add GitHub Actions](https://github.com/nielslange/smntcs-google-analytics/issues/10)
+
 ### 2.4
 * Test up to 5.3
 * Add build tools

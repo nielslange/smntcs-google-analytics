@@ -1,6 +1,6 @@
 name: Run integration scripts
 
-on: push:
+on: push
 
 jobs:
   test:

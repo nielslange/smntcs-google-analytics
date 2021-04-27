@@ -6,11 +6,11 @@
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Version: 2.4
- * Requires at least: 3.4
- * Requires PHP: 5.6
- * Tested up to: 5.3
- * License: GPL3+
- * License URI: https://www.gnu.org/licenses/gpl.html
+ * Tested up to: 5.7
+ * Requires at least: 5.5
+ * Requires PHP: 7.0
+ * License: GPLv2+
+ * License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
  * @category   Plugin
  * @package    WordPress
@@ -19,14 +19,8 @@
  * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
 
-/**
- * Avoid direct plugin access
- *
- * @since 1.0.0
- */
-if ( ! defined( 'ABSPATH' ) ) {
-	die( '¯\_(ツ)_/¯' );
-}
+// Avoid direct plugin access.
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Load text domain
@@ -93,8 +87,8 @@ add_action( 'customize_register', 'smntcs_google_analytics_register_customize' )
 /**
  * Add settings link on plugin page
  *
- * @param string $url The original URL.
- * @return string $url The updated URL.
+ * @param array $url The original URL.
+ * @return array The updated URL.
  * @since 1.0.0
  */
 function smntcs_ga_plugin_settings_link( $url ) {
@@ -107,7 +101,7 @@ function smntcs_ga_plugin_settings_link( $url ) {
 add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_ga_plugin_settings_link' );
 
 /**
- * Load Adobe Typekit Fonts code and custom CSS
+ * Add Google Analytics Tracking code to the DOM.
  *
  * @since 1.0.0
  */

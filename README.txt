@@ -4,10 +4,11 @@ Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KFV2UW8YGYNAE
 Tags: Google Analytics, Tracking, IP Anonymization, Anonymize IP
 Version: 2.4
-Requires at least: 3.4
-Tested up to: 5.3
-License: GPL3+
-License URI: https://www.gnu.org/licenses/gpl.html
+Tested up to: 5.7
+Requires at least: 5.5
+Requires PHP: 7.0
+License: GPLv2+
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 Adds Google Analytics tracking code to your site and anonymize visitors IP address if necessary.
 

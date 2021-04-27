@@ -1,9 +1,6 @@
 name: Run integration scripts
 
-on:
-  push:
-    tags-ignore:
-      - '**'
+on: push:
 
 jobs:
   test:

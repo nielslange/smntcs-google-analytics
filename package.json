@@ -1,6 +1,5 @@
 {
 	"name": "smntcs-google-analytics",
-	"version": "1.0.0",
 	"description": "Adds Google Analytics tracking code to your site.",
 	"author": "Niels Lange",
 	"license": "GPL-2.0-or-later",
@@ -18,11 +17,13 @@
 		"url": "https://github.com/nielslange/smntcs-google-analytics/issues"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^2.1.0"
+		"@wordpress/env": "^4.1",
+		"cypress": "^9.1"
 	},
 	"scripts": {
 		"wp-env": "wp-env",
-		"start": "npm run wp-env start",
-		"stop": "npm run wp-env stop"
+		"cypress": "cypress",
+		"test-gui": "cypress open",
+		"test": "cypress run --headless --browser chrome"
 	}
 }

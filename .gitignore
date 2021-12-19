@@ -1,7 +1,5 @@
-.DS_Store
-.svn
+cypress/
 node_modules/
 vendor/
-/composer.lock
-/.phpcs.cache
 /.phplint.cache
+/.phpcs.cache

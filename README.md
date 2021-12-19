@@ -25,38 +25,54 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-google-analytics
 
 ## Changelog
 
-### 2.5
-* [Test up to 5.7](https://github.com/nielslange/smntcs-google-analytics/issues/11)
-* [Add build tools](https://github.com/nielslange/smntcs-google-analytics/issues/9)
-* [Add Add GitHub Actions](https://github.com/nielslange/smntcs-google-analytics/issues/10)
+### 2.6 (2021-04-27)
 
-### 2.4
-* Test up to 5.3
-* Add build tools
+- Test up to 5.8
+- [Add e2e tests](https://github.com/nielslange/smntcs-google-analytics/issues/2)
 
-### 2.3
-* Test up to 5.2
+### 2.5 (2021-04-27)
 
-### 2.2
-* Test up to 5.1
+- Test up to 5.7
+- [Add build tools](https://github.com/nielslange/smntcs-google-analytics/issues/9)
+- [Add GitHub Actions](https://github.com/nielslange/smntcs-google-analytics/issues/10)
 
-### 2.1
-* Add FAQ
+### 2.4 (2019-12-21)
 
-### 2.0
-* Use Customizer instead of options page
+- Test up to 5.3
+- Add build tools
 
-### 1.4
-* Add donation link
+### 2.3 (2019-06-28)
 
-### 1.3
-* Update textdomain
+- Test up to 5.2
 
-### 1.2
-* Fix tracking code visibility
+### 2.2 (2019-06-28)
 
-### 1.1
-* Fix plugin title
+- Test up to 5.1
 
-### 1.0
-* Initial release
+### 2.1 (2016-12-24)
+
+- Add FAQ
+
+### 2.0 (2016-09-11)
+
+- Use Customizer instead of options page
+
+### 1.4 (2016-07-20)
+
+- Add donation link
+
+### 1.3 (2016-07-20)
+
+- Update textdomain
+
+### 1.2 (2016-07-20)
+
+- Fix tracking code visibility
+
+### 1.1 (2016-07-20)
+
+- Fix plugin title
+
+### 1.0 (2016-07-20)
+
+- Initial release

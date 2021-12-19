@@ -1,12 +1,12 @@
 === SMNTCS Google Analytics ===
- 
+
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KFV2UW8YGYNAE
 Tags: Google Analytics, Tracking, IP Anonymization, Anonymize IP
-Version: 2.5
-Tested up to: 5.7
+Version: 2.6
+Tested up to: 5.8
 Requires at least: 5.5
-Requires PHP: 7.0
+Requires PHP: 7.3
 License: GPLv2+
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -15,13 +15,13 @@ Adds Google Analytics tracking code to your site and anonymize visitors IP addre
 == Description ==
 
 > <strong>Google Analytics</strong><br>
-> Google Analytics is one of the best tracking systems available. It allows you to analyze how you visitors found you, via which pages they enter your site, via which pages they leave your site and which pages they visit during their session. 
+> Google Analytics is one of the best tracking systems available. It allows you to analyze how you visitors found you, via which pages they enter your site, via which pages they leave your site and which pages they visit during their session.
 
 = SMNTCS Google Analytics =
-SMNTCS Google Analytics enables you to add the Google Analytics tracking code to your website. 
+SMNTCS Google Analytics enables you to add the Google Analytics tracking code to your website.
 
 = IP Anonymization =
-Since version 2.0 it's possible to anonymize the IP of your visitor, which is required by law in some countries.    
+Since version 2.0 it's possible to anonymize the IP of your visitor, which is required by law in some countries.
 
 == Installation ==
 
@@ -43,38 +43,42 @@ This issue might be caused by a security plugin. If you use a security plugin, e
 
 == Changelog ==
 
-= 2.5 =
-* [Test up to 5.7](https://github.com/nielslange/smntcs-google-analytics/issues/11)
-* [Add build tools](https://github.com/nielslange/smntcs-google-analytics/issues/9)
-* [Add Add GitHub Actions](https://github.com/nielslange/smntcs-google-analytics/issues/10)
+= 2.6 (2021-04-27) =
+* Test up to 5.8
+* [Add e2e tests](https://github.com/nielslange/smntcs-google-analytics/issues/2)
 
-= 2.4 =
+= 2.5 (2021-04-27) =
+* Test up to 5.7
+* [Add build tools](https://github.com/nielslange/smntcs-google-analytics/issues/9)
+* [Add GitHub Actions](https://github.com/nielslange/smntcs-google-analytics/issues/10)
+
+= 2.4 (2019-12-21) =
 * Test up to 5.3
 * Add build tools
 
-= 2.3 =
+= 2.3 (2019-06-28) =
 * Test up to 5.2
 
-= 2.2 =
+= 2.2 (2019-06-28) =
 * Test up to 5.1
 
-= 2.1 =
+= 2.1 (2016-12-24) =
 * Add FAQ
 
-= 2.0 =
+= 2.0 (2016-09-11) =
 * Use Customizer instead of options page
 
-= 1.4 =
+= 1.4 (2016-07-20) =
 * Add donation link
 
-= 1.3 =
+= 1.3 (2016-07-20) =
 * Update textdomain
 
-= 1.2 =
+= 1.2 (2016-07-20) =
 * Fix tracking code visibility
 
-= 1.1 =
+= 1.1 (2016-07-20) =
 * Fix plugin title
 
-= 1.0 =
+= 1.0 (2016-07-20) =
 * Initial release

@@ -28,8 +28,8 @@
 		"wp-coding-standards/wpcs": "^2.3"
 	},
 	"scripts": {
-		"cbf": "phpcbf --standard=.phpcs.xml .",
-		"cs": "phpcs --standard=.phpcs.xml .",
+		"cbf": "phpcbf --standard=phpcs.dist.xml .",
+		"cs": "phpcs --standard=phpcs.dist.xml .",
 		"lint": "phplint",
 		"psalm": "psalm --no-cache"
 	}

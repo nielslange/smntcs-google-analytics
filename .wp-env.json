@@ -1,4 +1,4 @@
 {
-	"port": 1002,
-	"testsPort": 1003
+	"core": null,
+	"plugins": ["."]
 }

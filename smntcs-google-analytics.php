@@ -6,7 +6,6 @@
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Version: 2.6
- * Tested up to: 5.8
  * Requires at least: 5.5
  * Requires PHP: 7.3
  * License: GPLv2+

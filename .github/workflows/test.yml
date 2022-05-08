@@ -20,7 +20,7 @@ jobs:
         run: ./vendor/bin/phpcs --version
 
       - name: Run PHP_CodeSniffer
-        run: composer cs
+        run: composer phpcs
 
   PHPLint:
     runs-on: ubuntu-latest
@@ -36,7 +36,7 @@ jobs:
         run: ./vendor/bin/phplint --version
 
       - name: Run PHPLint
-        run: composer lint
+        run: composer phplint
 
   Psalm:
     runs-on: ubuntu-latest

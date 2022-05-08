@@ -1,13 +1,13 @@
 # SMNTCS Google Analytics
 
-[![Build Status](https://api.travis-ci.com/nielslange/smntcs-google-analytics.svg?branch=master)](https://api.travis-ci.com/nielslange/smntcs-google-analytics)
-[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
-[![GPLv2 License](https://img.shields.io/github/license/nielslange/smntcs-google-analytics.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
-[![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-google-analytics/wp-badge.svg)](https://plugintests.com/plugins/smntcs-google-analytics/latest)
-[![Compatible to PHP version](https://plugintests.com/plugins/smntcs-google-analytics/php-badge.svg)](https://plugintests.com/plugins/smntcs-google-analytics/latest)
-[![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-google-analytics.svg)](https://wordpress.org/plugins/smntcs-google-analytics/)
-[![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-google-analytics.svg)](https://wordpress.org/plugins/smntcs-google-analytics/)
-[![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-google-analytics.svg)](https://wordpress.org/plugins/smntcs-google-analytics/)
+![Support Level](https://img.shields.io/badge/support-active-green.svg)] \\
+![Build Status](https://github.com/nielslange/smntcs-google-analytics/actions/workflows/test.yml/badge.svg) \\
+![GPLv2 License](https://img.shields.io/github/license/nielslange/smntcs-google-analytics.svg)] \\
+![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-google-analytics/wp-badge.svg)] \\
+![Compatible to PHP version](https://plugintests.com/plugins/smntcs-google-analytics/php-badge.svg)] \\
+![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-google-analytics.svg)] \\
+![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-google-analytics.svg)] \\
+![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-google-analytics.svg)] \\
 
 Adds Google Analytics tracking code to your site and anonymize visitors IP address if necessary.
 
@@ -24,6 +24,10 @@ Adds Google Analytics tracking code to your site and anonymize visitors IP addre
 You can find the plugin on https://wordpress.org/plugins/smntcs-google-analytics/.
 
 ## Changelog
+
+### 2.7 (2022-05-09)
+
+- Test up to 6.0
 
 ### 2.6 (2021-04-27)
 

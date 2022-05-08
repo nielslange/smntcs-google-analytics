@@ -3,10 +3,10 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KFV2UW8YGYNAE
 Tags: Google Analytics, Tracking, IP Anonymization, Anonymize IP
-Version: 2.6
-Tested up to: 5.8
+Version: 2.7
+Tested up to: 6.0
 Requires at least: 5.5
-Requires PHP: 7.3
+Requires PHP: 5.6
 License: GPLv2+
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -42,6 +42,10 @@ This issue might be caused by a security plugin. If you use a security plugin, e
 1. Paste you Google Analytics tracking code in the customizer
 
 == Changelog ==
+
+= 2.7 (2022-05-09) =
+
+* Test up to 6.0
 
 = 2.6 (2021-04-27) =
 * Test up to 5.8

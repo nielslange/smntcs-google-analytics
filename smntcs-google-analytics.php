@@ -1,35 +1,21 @@
 <?php
 /**
- * Plugin Name: SMNTCS Google Analytics
- * Plugin URI: https://github.com/nielslange/smntcs-google-analytics/
- * Description: Adds <a href="https://analytics.google.com/">Google Analytics</a> to your site
- * Author: Niels Lange <info@nielslange.de>
- * Author URI: https://nielslange.de
- * Version: 2.7
- * Requires at least: 5.5
- * Requires PHP: 5.6
- * License: GPLv2+
- * License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * Plugin Name:           SMNTCS Google Analytics
+ * Plugin URI:            https://github.com/nielslange/smntcs-google-analytics/
+ * Description:           Adds <a href="https://analytics.google.com/">Google Analytics</a> to your site.
+ * Author:                Niels Lange
+ * Author URI:            https://nielslange.de
+ * Text Domain:           smntcs-google-analytics
+ * Version:               2.8
+ * Requires PHP:          5.6
+ * Requires at least:     5.5
+ * License:               GPL v2 or later
+ * License URI:           https://www.gnu.org/licenses/gpl-2.0.html
  *
- * @category   Plugin
- * @package    WordPress
- * @subpackage SMNTCS Google Analytics
- * @author     Niels Lange <info@nielslange.de>
- * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
+ * @package SMNTCS_Google_Analytics
  */
 
-// Avoid direct plugin access.
 defined( 'ABSPATH' ) || exit;
-
-/**
- * Load text domain
- *
- * @since 1.0.0
- */
-function smntcs_google_analytics_load_textdomain() {
-	load_plugin_textdomain( 'smntcs-google-analytics', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-}
-add_action( 'plugins_loaded', 'smntcs_google_analytics_load_textdomain' );
 
 /**
  * Add Adobe Typekit Fonts to WordPress Customizer

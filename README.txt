@@ -1,14 +1,13 @@
 === SMNTCS Google Analytics ===
 
-Contributors: nielslange
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KFV2UW8YGYNAE
-Tags: Google Analytics, Tracking, IP Anonymization, Anonymize IP
-Version: 2.7
-Tested up to: 6.0
-Requires at least: 5.5
-Requires PHP: 5.6
-License: GPLv2+
-License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Contributors:       nielslange
+Tags:               Google Analytics, Tracking, IP Anonymization, Anonymize IP
+Stable tag:         2.8
+Tested up to:       6.1
+Requires PHP:       5.6
+Requires at least:  5.5
+License:            GPL v2 or later
+License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
 Adds Google Analytics tracking code to your site and anonymize visitors IP address if necessary.
 
@@ -43,46 +42,50 @@ This issue might be caused by a security plugin. If you use a security plugin, e
 
 == Changelog ==
 
-= 2.7 (2022-05-09) =
+= 2.8 (2022.12.03) =
 
-* Test up to 6.0
+- Test up to 6.1
 
-= 2.6 (2021-04-27) =
-* Test up to 5.8
-* [Add e2e tests](https://github.com/nielslange/smntcs-google-analytics/issues/2)
+= 2.7 (2022.05.09) =
 
-= 2.5 (2021-04-27) =
-* Test up to 5.7
-* [Add build tools](https://github.com/nielslange/smntcs-google-analytics/issues/9)
-* [Add GitHub Actions](https://github.com/nielslange/smntcs-google-analytics/issues/10)
+- Test up to 6.0
 
-= 2.4 (2019-12-21) =
-* Test up to 5.3
-* Add build tools
+= 2.6 (2021.04.27) =
+- Test up to 5.8
+- [Add e2e tests](https://github.com/nielslange/smntcs-google-analytics/issues/2)
 
-= 2.3 (2019-06-28) =
-* Test up to 5.2
+= 2.5 (2021.04.27) =
+- Test up to 5.7
+- [Add build tools](https://github.com/nielslange/smntcs-google-analytics/issues/9)
+- [Add GitHub Actions](https://github.com/nielslange/smntcs-google-analytics/issues/10)
 
-= 2.2 (2019-06-28) =
-* Test up to 5.1
+= 2.4 (2019.12.21) =
+- Test up to 5.3
+- Add build tools
 
-= 2.1 (2016-12-24) =
-* Add FAQ
+= 2.3 (2019.06.28) =
+- Test up to 5.2
 
-= 2.0 (2016-09-11) =
-* Use Customizer instead of options page
+= 2.2 (2019.06.28) =
+- Test up to 5.1
 
-= 1.4 (2016-07-20) =
-* Add donation link
+= 2.1 (2016.12.24) =
+- Add FAQ
 
-= 1.3 (2016-07-20) =
-* Update textdomain
+= 2.0 (2016.09.11) =
+- Use Customizer instead of options page
 
-= 1.2 (2016-07-20) =
-* Fix tracking code visibility
+= 1.4 (2016.07.20) =
+- Add donation link
 
-= 1.1 (2016-07-20) =
-* Fix plugin title
+= 1.3 (2016.07.20) =
+- Update textdomain
 
-= 1.0 (2016-07-20) =
-* Initial release
+= 1.2 (2016.07.20) =
+- Fix tracking code visibility
+
+= 1.1 (2016.07.20) =
+- Fix plugin title
+
+= 1.0 (2016.07.20) =
+- Initial release

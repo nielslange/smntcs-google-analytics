@@ -1,6 +1,6 @@
 name: Run PHPCS, PHPLint, Psalm and Cypress
 
-on: [pull_request]
+on: [pull_request, push]
 
 jobs:
   PHPS:
@@ -8,10 +8,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
 
       - name: Install Composer dependencies
-        uses: ramsey/composer-install@v1
+        uses: ramsey/composer-install@v2
 
       - name: Show PHPCS sniffs
         run: ./vendor/bin/phpcs -i
@@ -27,10 +27,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
 
       - name: Install Composer dependencies
-        uses: ramsey/composer-install@v1
+        uses: ramsey/composer-install@v2
 
       - name: Show PHPLint version info
         run: ./vendor/bin/phplint --version
@@ -43,10 +43,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
 
       - name: Install Composer dependencies
-        uses: ramsey/composer-install@v1
+        uses: ramsey/composer-install@v2
 
       - name: Show PHPCS sniffs
         run: ./vendor/bin/phpcs -i
@@ -61,7 +61,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
 
       - name: Install node
         uses: actions/setup-node@v2

@@ -35,6 +35,7 @@ class SMNTCS_Google_Analytics {
 	 * Register customizer settings.
 	 *
 	 * @param WP_Customize_Manager $wp_customize Customizer instance.
+	 * @return void
 	 */
 	public function register_customize( $wp_customize ) {
 		$wp_customize->add_section(
@@ -83,7 +84,6 @@ class SMNTCS_Google_Analytics {
 	 * Add settings link to plugin list.
 	 *
 	 * @param array $url Array of links.
-	 *
 	 * @return array
 	 */
 	public function plugin_settings_link( $url ) {
@@ -96,6 +96,8 @@ class SMNTCS_Google_Analytics {
 
 	/**
 	 * Enqueue tracking code.
+	 *
+	 * @return void
 	 */
 	public function enqueue() {
 		if ( ! is_admin() ) {

@@ -30,7 +30,6 @@
 	<rule ref="WordPress.Files.FileName">
 		<properties>
 			<property name="is_theme" value="false"/>
-			<property name="strict_class_file_names" value="false"/>
 		</properties>
 	</rule>
 
@@ -59,6 +58,7 @@
 	<rule ref="WordPress-Extra">
 		<!-- _e() and _ex() are considered safe for core translations. -->
 		<exclude name="WordPress.Security.EscapeOutput.UnsafePrintingFunction"/>
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
 	</rule>
 
 	<rule ref="WordPress.Security.EscapeOutput">

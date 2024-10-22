@@ -2,8 +2,8 @@
 
 Contributors:       nielslange
 Tags:               Google Analytics, Tracking, IP Anonymization, Anonymize IP
-Stable tag:         2.9
-Tested up to:       6.4
+Stable tag:         3.0
+Tested up to:       6.6
 Requires PHP:       5.6
 Requires at least:  5.5
 License:            GPL v2 or later
@@ -42,36 +42,41 @@ This issue might be caused by a security plugin. If you use a security plugin, e
 
 == Changelog ==
 
+= 3.0 (2023.10.22) =
+
+- Test up to WordPress 6.6
+- Migrate from Cypress to Playwright
+
 = 2.9 (2023.10.15) =
 
-- Test up to WP 6.4
+- Test up to WordPress 6.4
 
 = 2.8 (2022.12.03) =
 
-- Test up to WP 6.1
+- Test up to WordPress 6.1
 
 = 2.7 (2022.05.09) =
 
-- Test up to WP 6.0
+- Test up to WordPress 6.0
 
 = 2.6 (2021.04.27) =
-- Test up to WP 5.8
+- Test up to WordPress 5.8
 - [Add e2e tests](https://github.com/nielslange/smntcs-google-analytics/issues/2)
 
 = 2.5 (2021.04.27) =
-- Test up to WP 5.7
+- Test up to WordPress 5.7
 - [Add build tools](https://github.com/nielslange/smntcs-google-analytics/issues/9)
 - [Add GitHub Actions](https://github.com/nielslange/smntcs-google-analytics/issues/10)
 
 = 2.4 (2019.12.21) =
-- Test up to WP 5.3
+- Test up to WordPress 5.3
 - Add build tools
 
 = 2.3 (2019.06.28) =
-- Test up to WP 5.2
+- Test up to WordPress 5.2
 
 = 2.2 (2019.06.28) =
-- Test up to WP 5.1
+- Test up to WordPress 5.1
 
 = 2.1 (2016.12.24) =
 - Add FAQ

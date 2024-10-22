@@ -6,7 +6,7 @@
  * Author:                Niels Lange
  * Author URI:            https://nielslange.de
  * Text Domain:           smntcs-google-analytics
- * Version:               2.9
+ * Version:               3.0
  * Requires PHP:          5.6
  * Requires at least:     5.5
  * License:               GPL v2 or later
@@ -28,7 +28,7 @@ class SMNTCS_Google_Analytics {
 	public function __construct() {
 		add_action( 'customize_register', array( $this, 'register_customize' ) );
 		add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'plugin_settings_link' ) );
-		add_action( 'wp_footer', array( $this, 'enqueue' ) );
+		add_action( 'wp_footer', array( $this, 'enqueue' ), 1, 0 );
 	}
 
 	/**
@@ -65,7 +65,7 @@ class SMNTCS_Google_Analytics {
 		$wp_customize->add_setting(
 			'smntcs_google_analytics_ip_anonymization',
 			array(
-				'default' => false,
+				'default' => '',
 				'type'    => 'option',
 			)
 		);
@@ -115,7 +115,6 @@ class SMNTCS_Google_Analytics {
 			}
 		}
 	}
-
 }
 
 new SMNTCS_Google_Analytics();

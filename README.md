@@ -25,6 +25,10 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-google-analytics
 
 ## Changelog
 
+### 3.1 (2023.10.30)
+
+-   Test up to WordPress 6.7
+
 ### 3.0 (2023.10.22)
 
 -   Test up to WordPress 6.6

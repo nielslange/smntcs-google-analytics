@@ -2,3 +2,4 @@ node_modules/
 vendor/
 /.phplint.cache
 /.phpcs.cache
+/test-results/.last-run.json

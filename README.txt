@@ -2,8 +2,8 @@
 
 Contributors:       nielslange
 Tags:               Google Analytics, Tracking, IP Anonymization, Anonymize IP
-Stable tag:         3.0
-Tested up to:       6.6
+Stable tag:         3.1
+Tested up to:       6.7
 Requires PHP:       5.6
 Requires at least:  5.5
 License:            GPL v2 or later
@@ -41,6 +41,10 @@ This issue might be caused by a security plugin. If you use a security plugin, e
 1. Paste you Google Analytics tracking code in the customizer
 
 == Changelog ==
+
+= 3.1 (2023.10.30)
+
+- Test up to WordPress 6.7
 
 = 3.0 (2023.10.22) =
 

@@ -1,5 +1,10 @@
-node_modules/
-vendor/
+/node_modules
+vendor
+.idea/*
 /.phplint.cache
 /.phpcs.cache
-/test-results/.last-run.json
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

@@ -25,6 +25,12 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-google-analytics
 
 ## Changelog
 
+### 3.2 (2026.09.26)
+
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
+- Accept a measurement ID such as G-XXXXXXXXXX and load gtag.js for it, instead of printing the ID on the page
+
 ### 3.1 (2023.10.30)
 
 -   Test up to WordPress 6.7

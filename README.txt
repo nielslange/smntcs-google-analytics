@@ -1,26 +1,27 @@
 === SMNTCS Google Analytics ===
 
 Contributors:       nielslange
-Tags:               Google Analytics, Tracking, IP Anonymization, Anonymize IP
-Stable tag:         3.1
-Tested up to:       6.7
-Requires PHP:       5.6
+Tags:               google analytics, analytics, gtag, tracking, statistics
 Requires at least:  5.5
+Tested up to:       7.1
+Requires PHP:       7.4
+Stable tag:         3.2
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
-Adds Google Analytics tracking code to your site and anonymize visitors IP address if necessary.
+Adds Google Analytics to your site with just your measurement ID or the full tracking code, plus optional IP anonymisation.
 
 == Description ==
 
-> <strong>Google Analytics</strong><br>
-> Google Analytics is one of the best tracking systems available. It allows you to analyze how you visitors found you, via which pages they enter your site, via which pages they leave your site and which pages they visit during their session.
+SMNTCS Google Analytics adds [Google Analytics](https://analytics.google.com/) tracking to every page of your site.
 
-= SMNTCS Google Analytics =
-SMNTCS Google Analytics enables you to add the Google Analytics tracking code to your website.
+In the Customizer you can either enter your measurement ID, for example `G-XXXXXXXXXX`, or paste the full tracking code that Google Analytics gives you. When you enter an ID, the plugin loads the official gtag.js script for you.
 
-= IP Anonymization =
-Since version 2.0 it's possible to anonymize the IP of your visitor, which is required by law in some countries.
+= Features =
+
+* Enter a GA4 measurement ID or paste the full tracking code
+* Loads gtag.js asynchronously so it does not slow down your pages
+* Optional IP anonymisation
 
 == Installation ==
 
@@ -34,16 +35,37 @@ Since version 2.0 it's possible to anonymize the IP of your visitor, which is re
 
 = Why am I not able to save the verification code? =
 
-This issue might be caused by a security plugin. If you use a security plugin, e.g. Wordfence, then disable it so save your verification code and activate it once you’re done.
+This issue might be caused by a security plugin. If you use a security plugin, e.g. Wordfence, then disable it to save your verification code and activate it once you’re done.
+
+= Where do I find my measurement ID? =
+
+In Google Analytics, go to Admin, then Data streams, and open your web stream. The measurement ID starts with G-.
+
+= Why am I not able to save the tracking code? =
+
+A security plugin such as Wordfence may block script code in the Customizer. Enter only your measurement ID instead, or pause the security plugin while you save.
+
+= Where do I find my measurement ID? =
+
+In Google Analytics, go to Admin, then Data streams, and open your web stream. The measurement ID starts with G-.
+
+= Why am I not able to save the tracking code? =
+
+A security plugin such as Wordfence may block script code in the Customizer. Enter only your measurement ID instead, or pause the security plugin while you save.
 
 == Screenshots ==
 
-1. Paste you Google Analytics tracking code in the customizer
+1. Paste your Google Analytics tracking code in the customizer
 
 == Changelog ==
 
-= 3.1 (2023.10.30)
+= 3.2 (2026.09.26) =
 
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
+- Accept a measurement ID such as G-XXXXXXXXXX and load gtag.js for it, instead of printing the ID on the page
+
+= 3.1 (2023.10.30) =
 - Test up to WordPress 6.7
 
 = 3.0 (2023.10.22) =

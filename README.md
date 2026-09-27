@@ -25,6 +25,10 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-google-analytics
 
 ## Changelog
 
+### 3.3 (2026.09.27)
+
+- Remove duplicated FAQ entries from the readme
+
 ### 3.2 (2026.09.26)
 
 - Test up to WordPress 7.1

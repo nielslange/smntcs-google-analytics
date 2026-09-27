@@ -5,7 +5,7 @@ Tags:               google analytics, analytics, gtag, tracking, statistics
 Requires at least:  5.5
 Tested up to:       7.1
 Requires PHP:       7.4
-Stable tag:         3.2
+Stable tag:         3.3
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,19 +45,15 @@ In Google Analytics, go to Admin, then Data streams, and open your web stream. T
 
 A security plugin such as Wordfence may block script code in the Customizer. Enter only your measurement ID instead, or pause the security plugin while you save.
 
-= Where do I find my measurement ID? =
-
-In Google Analytics, go to Admin, then Data streams, and open your web stream. The measurement ID starts with G-.
-
-= Why am I not able to save the tracking code? =
-
-A security plugin such as Wordfence may block script code in the Customizer. Enter only your measurement ID instead, or pause the security plugin while you save.
-
 == Screenshots ==
 
 1. Paste your Google Analytics tracking code in the customizer
 
 == Changelog ==
+
+= 3.3 (2026.09.27) =
+
+- Remove duplicated FAQ entries from the readme
 
 = 3.2 (2026.09.26) =
 
